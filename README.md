@@ -3,7 +3,8 @@
 2. You can run the project by simply cloning the repository to your machine
 3. Import the digioutsource.postman_collection.json to your Postman
 4. Then click send
-5.You can verify the tests on the test tab 
+5. You can verify the tests on the test tab 
+
 
  # See The Screenshot attached below 
  
