@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "75fa58e7-0d28-44f2-a19c-dd54f03c56e3",
+		"_postman_id": "d8708af9-ec76-4f49-b587-1c30ed961439",
 		"name": "digioutsource",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "get-conversion-rates",
+			"name": "get-conversion-rates-test",
 			"event": [
 				{
 					"listen": "test",
