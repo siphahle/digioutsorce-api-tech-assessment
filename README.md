@@ -1,11 +1,18 @@
 # digioutsorce-api-tech-assessment
-1. This is my API assessment and its done via Postman 
-2. You can run the project by simply cloning the repository to your machine
-3. Import the digioutsource.postman_collection.json to your Postman
-4. Then click send
-5. You can verify the tests on the test tab 
+
+ This is my API assessment and its done via Postman 
+
+# Steps to execute the API Tests
+
+
+1. You can run the project by simply cloning the repository to your machine
+2. Import the digioutsource.postman_collection.json to your Postman
+3. Import the  digioutsource.postman_environment.json to your Postman
+4. Then click send button to execute the tests
+5. You can verify the tests by clicking on the Tests tab 
 
 
  # See The Screenshot attached below 
  
-![image](https://user-images.githubusercontent.com/12251485/155569921-3bfe43ae-0ea8-4d4f-8e45-90ff58cb8ee1.png)
+![image](https://user-images.githubusercontent.com/12251485/155746044-ec680786-9e41-4c7a-ae44-7a67913d4bbe.png)
+
