@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "52024e65-1e29-4142-9d7d-4de0ccc7ba8a",
+		"name": "digioutsource",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-conversion-rates-test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = JSON.parse(responseBody);\r",
+							"pm.test(\"Verify that a valid JSON response body is returned \", function () {\r",
+							"    pm.response.to.have.body(response);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 5000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify the HTTP status is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Verify the total number of currencies returned within the response is 161\", function () {\r",
+							"    pm.expect(Object.values(response.conversion_rates).length).eql(161);\r",
+							"    \r",
+							"    \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify the currency ‘GBP’ is shown within the response\", function(){\r",
+							"    pm.expect(response.conversion_rates).to.haveOwnProperty(\"GBP\");\r",
+							"\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{gateway}}/v6/1fc80820c72b0163bc9c7536/latest/USD",
+					"host": [
+						"{{gateway}}"
+					],
+					"path": [
+						"v6",
+						"1fc80820c72b0163bc9c7536",
+						"latest",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
